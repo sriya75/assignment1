@@ -26,7 +26,7 @@ index = range(0, 516)    # creating a new column in existing dataframe
 df['index'] = index
 
 
-print(df[df['index'] >= 20]['Close'].mean())  # ques 1 -- Make a average which has last 21 days close price.
-print(df[df['index'] >= 50]['Close'].mean())  # ques 2 -- Make a average which has last 50 days close price.
+print(df[df['index'] <= 20]['Close'].mean())  # ques 1 -- Make a average which has last 21 days close price.
+print(df[df['index'] <= 49]['Close'].mean())  # ques 2 -- Make a average which has last 50 days close price.
 print(df[df['Open'] == df['High']])           # ques 3 -- Give a data set which has all the open=high values.
 print(df[df['Open'] == df['Low']])            # ques 4 -- Give a data set which has all the open=low values.
